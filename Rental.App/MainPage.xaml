@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Rental.App.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Rental.Model"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button Content="Create customer" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="91,753,0,0" RenderTransformOrigin="0.414,-1.108"/>
+        <ListView ItemsSource="{x:Bind Customer}" HorizontalAlignment="Left" Height="600" Margin="91,74,0,0" VerticalAlignment="Top" Width="421"/>
+
+        <TextBox HorizontalAlignment="Left" Margin="91,679,0,0" PlaceholderText="First Name" VerticalAlignment="Top" Width="211"/>
+        <TextBox HorizontalAlignment="Left" Margin="91,0,0,252" PlaceholderText="Last Name" VerticalAlignment="Bottom" Width="211"/>
+
+
+    </Grid>
+</Page>
